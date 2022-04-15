@@ -11,7 +11,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'JSONPlaceholder App' },
-      { hid: 'og:url', property: 'og:url', content: process.env.APP_URL },
+      { hid: 'og:url', property: 'og:url', content: 'http://localhost:3000' },
       { hid: 'og:description', property: 'og:description', content: 'JSONPlaceholder Simple Application' }
     ],
     link: [
@@ -55,7 +55,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.BASE_API_URL,
+    baseURL: 'http://localhost:3001',
     progress: false
   },
 
