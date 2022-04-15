@@ -6,8 +6,19 @@
 # install dependencies
 $ yarn install
 
+# than go to https://github.com/twixy123/json-placeholder-proxy (simple proxy server :) )
+# clone this repo
+# serve with
+$ yarn install
+# server will work at localhost:3001
+$ yarn dev
+
 # serve with hot reload at localhost:3000
 $ yarn dev
+
+# !!!!! or you may write this ( with json-server )
+$ yarn serve
+# server will work at localhost:3001
 
 # build for production and launch server
 $ yarn build
