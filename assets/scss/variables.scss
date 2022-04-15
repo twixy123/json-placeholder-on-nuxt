@@ -1,0 +1,18 @@
+$clr-black: #000;
+$clr-grey: #3C3C4399;
+$clr-pink: #FF008A;
+$clr-white: #fff;
+$clr-lightest-grey: #E2E2E2;
+$clr-light-grey: #D1D1D6;
+
+
+$clr-main: $clr-black;
+$clr-secondary: rgba($clr-grey, .6);
+
+$bg-light-gray: rgba($clr-grey, .1);
+
+$border-color: $clr-lightest-grey;
+$divide-color: $clr-light-grey;
+
+$font-family: 'manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu", sans-serif;
+$font-family-inter: 'inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu", sans-serif;

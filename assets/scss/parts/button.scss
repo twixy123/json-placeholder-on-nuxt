@@ -1,0 +1,19 @@
+.btn {
+  background: none;
+  outline: none;
+  border: 1px solid $clr-pink;
+  color: $clr-pink;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.22;
+  padding: 13px 0;
+  min-width: 300px;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: $font-family;
+
+  &[variant="primary"] {
+    background: $clr-pink;
+    color: $clr-white;
+  }
+}

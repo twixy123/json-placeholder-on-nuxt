@@ -1,0 +1,31 @@
+$spacemounts: (0, 5, 10, 15, 20, 25, 30, 40, 60, 80);
+
+@each $margin in $spacemounts{
+  .margin-t-#{$margin}{
+    margin-top: #{$margin}px;
+  }
+
+  .margin-b-#{$margin}{
+    margin-bottom: #{$margin}px;
+  }
+
+  .margin-tb-#{$margin}{
+    margin-top: #{$margin}px;
+    margin-bottom: #{$margin}px;
+  }
+}
+
+@each $padding in $spacemounts{
+  .margin-l-#{$padding}{
+    padding-left: #{$padding}px;
+  }
+
+  .margin-r-#{$padding}{
+    padding-right: #{$margin}px;
+  }
+
+  .margin-lr-#{$padding}{
+    padding-left: #{$padding}px;
+    padding-right: #{$padding}px;
+  }
+}

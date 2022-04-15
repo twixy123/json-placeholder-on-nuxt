@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body{
+  min-height: 100vh;
+  background-color: #ffffff;
+  min-width: 320px;
+  scroll-behavior: smooth;
+  font-family: $font-family;
+}
+
+html{
+  overflow: auto;
+}
+
+body{
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 320px;
+  position: relative;
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  &__content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-height: 1px;
+    padding: 100px 0 0 0;
+
+    @include xs-block {
+      padding-top: 135px;
+    }
+  }
+}
+
+header {
+  background: $clr-white;
+  left: 0;
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+main {
+  padding: 20px 0;
+}
+
+footer {
+  margin-top: 130px;
+  border-top: 1px solid $border-color;
+}
+
+.container {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 $col-gap;
+  width: 100%;
+
+  @include container-max-width(3, $col-gap);
+
+  @include md-block {
+    @include container-max-width(2, $col-gap);
+  }
+
+  @include sm-block {
+    padding: 0 $col-gap-sm;
+    @include container-max-width(2, $col-gap-sm);
+  }
+
+  @include xs-block {
+    max-width: 100%;
+    padding: 0 $col-gap-xs;
+  }
+
+  @include xxs-block {
+    padding: 0 $col-gap-xxs;
+  }
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  @include row-gap ($col-gap);
+
+  @include sm-block {
+    @include row-gap ($col-gap-sm);
+  }
+
+  @include xs-block {
+    @include row-gap ($col-gap-xs);
+  }
+
+  @include xxs-block {
+    @include row-gap ($col-gap-xxs);
+  }
+}
+
+.svg-icon {
+  line-height: 0;
+  font-size: 0;
+  vertical-align: bottom;
+}
