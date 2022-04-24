@@ -103,6 +103,12 @@ export default {
     }
   },
 
+  mounted () {
+    if (this.$route.query.edit) {
+      this.disabled = false
+    }
+  },
+
   methods: {
     ...mapActions({
       getCommentsAndPhotos: 'getCommentsAndPhotos',
@@ -125,6 +131,7 @@ export default {
           console.log('Error', error)
         } finally {
           this.disabled = true
+          this.$router.push(`/${this.$route.params.id}`)
         }
       }
     },
